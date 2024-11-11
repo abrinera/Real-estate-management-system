@@ -1,0 +1,7 @@
+-- database: e:\REMS\Trans_info.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+CREATE TABLE IF NOT EXISTS Trans_detail (date TEXT, trans_id VARCHAR(50), property_id VARCHAR(50),client_id VARCHAR(50) , first_name TEXT, last_name TEXT,amount TEXT,  account_no TEXT ,CONSTRAINT trans_pk PRIMARY KEY (trans_id,client_id,property_id));
+CREATE TABLE IF NOT EXISTS Payment (trans_id VARCHAR(50),property_id VARCHAR(50), client_id VARCHAR(50) ,price int, total_paid int ,due int , recent_transfer_date TEXT, payment_status TEXT,account_no TEXT , CONSTRAINT payment_pk PRIMARY KEY (trans_id,property_id,client_id,account_no));
+

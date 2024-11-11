@@ -1,0 +1,6 @@
+-- database: e:\REMS\Personal_info.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+CREATE TABLE IF NOT EXISTS Client (client_id VARCHAR(50) , first_name TEXT, last_name TEXT, gender TEXT, email TEXT ,contact TEXT, date_of_birth TEXT, address TEXT, occupation TEXT, property_id VARCHAR(50) ,date TEXT,CONSTRAINT client_pk PRIMARY KEY (client_id,property_id))
+
